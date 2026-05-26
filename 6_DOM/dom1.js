@@ -76,3 +76,60 @@ section[0].style.borderRadius="15px"
 section[0].style.textAlign="center"
 section[0].style.paddingTop="10px"
 section[0].style.boxShadow="3px 4px 5px rgba(0,0,0,0.8)"
+
+
+
+// ! 3. how to add class 
+
+//todo: element.classList.add("classname")
+//todo: element.classList.remove("classname")
+
+
+let article = document.getElementsByTagName("article")
+console.log(article[0])
+
+article[0].classList.add("dark")
+// article[0].classList.remove("dark")
+console.log(article[0].classList)
+
+
+
+// ! 4. how to write content inside element 
+
+
+ 
+let logo10 = document.querySelector("#logo")
+console.log(logo10)
+
+let li = document.querySelector("li")
+console.log(li)
+
+let section2 = document.querySelector("section")
+console.log(section2)
+
+let card1 = document.querySelector(".card")
+console.log(card1)
+
+
+console.log(section2.innerText)
+console.log(section2.innerHTML)
+
+
+section2.innerHTML = "<h1>i am from js</h1> "
+
+
+// ! 5. how to create element 
+
+
+let div = document.createElement("div")
+
+div.innerHTML = `<h2>i am circle</h2>`
+
+div.classList.add("circle")
+
+
+// article[0].after(div)
+// article[0].before(div)
+// article[0].append(div)
+article[0].prepend(div)
+
