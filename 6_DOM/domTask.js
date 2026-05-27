@@ -82,3 +82,6 @@ products.map((ele)=>{
 
     main.append(div)
 })
+
+
+// ----
