@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event </title>
+
+    <style>
+         .box1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+         }
+         .box2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+         }
+         .box3{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .card1 , .card2{
+          height: 300px;
+          width: 300px;
+          border: 2px solid black;
+         }
+    </style>
+</head>
+<body>
+    
+     <h1> event learing</h1>
+
+     <button onclick="wish()"> wish </button>
+
+     <div class="box1" onclick="changeColor()">
+
+     </div>
+
+     <button ondblclick="add()"> click me twice </button>
+
+     <h2 id="count"> 0 </h2>
+
+     <button onclick="increase()">increase</button>
+
+     <div class="box2" onmouseover="cbc()" onmouseout="cbc2()">
+
+     </div>
+
+
+     <div class="box3" onmousemove="increaseNumber()">
+
+
+     </div>
+
+
+     <div class="card1">
+          <h2>good afternoon</h2>
+     </div>
+     
+     <div class="card2" onclick="copyText()">
+
+     </div>
+
+     <script src="./event2.js"></script>
+</body>
+</html>
