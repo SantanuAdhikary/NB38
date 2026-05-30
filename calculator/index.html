@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <div class="outer">
+         <h1>calculator App</h1>
+         <div class="inner">
+
+            <input type="text">
+
+            <div class="row">
+                <button onclick="clearInput()">C</button>
+                <button onclick="removeLast()"><-</button>
+                <button onclick="getCharacter('/')">/</button>
+                <button onclick="getCharacter('*')">*</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getCharacter('7')">7</button>
+                <button onclick="getCharacter('8')">8</button>
+                <button onclick="getCharacter('9')">9</button>
+                <button onclick="getCharacter('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getCharacter('4')">4</button>
+                <button onclick="getCharacter('5')">5</button>
+                <button onclick="getCharacter('6')">6</button>
+                <button onclick="getCharacter('+')">+</button>
+            </div>
+
+            <div class="row">
+                <button onclick="getCharacter('1')">1</button>
+                <button onclick="getCharacter('2')">2</button>
+                <button onclick="getCharacter('3')">3</button>
+                <button onclick="getCharacter('%')">%</button>
+            </div>
+            <div class="row">
+                <button onclick="getCharacter('0')">0</button>
+                <button>EE</button>
+                <button onclick="getCharacter('.')">.</button>
+                <button onclick="calculate()">=</button>
+            </div>
+
+         </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
