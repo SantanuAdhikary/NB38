@@ -1,3 +1,23 @@
+### html question
+
+1. what is html and structure of html 
+2. what is tag and types.
+3. what is element . difference b/w all of them(inline,block,inline-block)
+4. formatting tags . b vs strong , mark , sup , sub , pre , del
+5. img , video  , audio
+6. marquee  
+7. iframe
+8. anchor tag
+9. list
+10. table
+12. div vs span
+13. semantic tag
+14. in form all the tag name 
+15. input tag what are the attributes are there 
+16. in type attribute what are the value we can give 
+17. explain about checkbox, radio and textarea 
+18. html current version vs prevous version
+
 ### javascript questions
 
 
