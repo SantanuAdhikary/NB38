@@ -67,4 +67,7 @@
 1. what is json and why we need  json 
 2. explain JSON.stringify() and JSON.parse() method
 
+
+
+
 <!-- ! 18/05/2026 1:00PM (higher order function) -->
