@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+
+         .outer{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: linear-gradient(to right top,#333,rgb(228, 8, 8));
+            gap:25px;
+         }
+
+         .outer > .inner{
+            width: 400px;
+            background-color: #fefefe;
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 3px 6px 4px rgba(0,0,0,0.6);
+            
+         }
+
+         label{
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color:#333;
+            letter-spacing: 1.4px;
+         }
+
+         input{
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            outline: none;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+            font-size: 18px;
+         }
+
+         input:focus{
+            border: 2px solid rgb(222, 0, 0);
+         }
+
+         button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: rgb(213, 2, 2);
+            border: none;
+            color:white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            cursor: pointer;
+         }
+
+         button:hover{
+            background-color: red;
+         }
+
+         .outer > h2{
+            text-transform: capitalize;
+            color:white;
+            font-size: 45px;
+            letter-spacing: 2px;
+            text-shadow: 2px 3px 4px rgba(0,0,0,0.6);
+
+         }
+    </style>
+</head>
+<body>
+    
+    <div class="outer">
+        <h2>form handling</h2>
+        <div class="inner">
+
+            <form action="" id="studentForm" autocomplete="off">
+                <label for="">Name</label>
+                <input type="text" placeholder="enter your name" id="username">
+
+                <label for="">email</label>
+                <input type="text" placeholder="enter your email" id="useremail">
+
+                <label for="">password</label>
+                <input type="text" placeholder="enter your password" id="userpass">
+                <button>register</button>
+            </form>
+             
+        </div>
+    </div>
+
+
+    <script src="./form.js"></script>
+</body>
+</html>
