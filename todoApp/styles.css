@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.outer{
+    height: 100vh;
+    background: linear-gradient(to right top,#111,#e60e0e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+}
+
+.outer > h1{
+    color:white;
+    font-size: 50px;
+    text-transform: capitalize  ;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.6 );
+}
+
+.outer > .inner{
+    background-color: #f5f5f5;
+    width: 400px;
+    height: 380px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 6px rgba(0,0,0,0.7);
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.inner > section{
+    display: flex;
+    gap:7px;
+}
+
+section > input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline:none;
+    flex-basis: 75%;
+    font-size: 18px;
+    letter-spacing: 1.7px;
+}
+
+section > input:focus{
+    border: 3px solid #e60e0e;
+}
+
+section > button{
+    flex-basis:25% ;
+    background-color: rgb(33, 168, 33);
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+}
+
+section > button:hover{
+    background-color: rgb(9, 97, 9);
+}
+
+ul{
+    margin-top: 20px;
+}   
+
+ul > li{
+    background-color: rgb(250, 212, 219);
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 5px solid #e60e0e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul > li > button{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    color:white;
+    box-shadow: 1px 2px 2px #ccc;
+    cursor: pointer;
+
+}
+
+ul > li > button:nth-child(2)
+{
+    background-color: rgb(252, 80, 80);
+}
+ul > li > button:nth-child(1)
+{
+    background-color: rgb(88, 207, 88)
+}
