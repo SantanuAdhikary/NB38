@@ -10,6 +10,8 @@ let ul = document.querySelector("ul")
 
 let todos = []
 
+let editIndex = null;
+
 addBtn.addEventListener("click",()=>{
 
     let data = input.value;
@@ -17,12 +19,17 @@ addBtn.addEventListener("click",()=>{
 
     if(data=='') return
 
-    todos.push(data)
-
+    if(editIndex == null)
+    {
+        todos.push(data)
+    }
+    else{ 
+        todos[editIndex] = data;
+        editIndex = null;
+        addBtn.innerText = "ADD"
+    }
     addTodo()
-
     input.value = ""
-
 })
 
 
@@ -34,7 +41,7 @@ let addTodo =()=>{
     todos.map((ele,index)=>{
         let li = document.createElement("li")
         li.innerHTML = `${ele} 
-                       <button>edit</button> 
+                       <button onclick="editTodo(${index})">edit</button> 
                        <button onclick="deleteTodo(${index})">delete</button>`;
         ul.append(li)
     })
@@ -44,4 +51,15 @@ let deleteTodo =(index)=>{
     todos.splice(index,1)
     addTodo();
     console.log("deleted")
+}
+
+
+let editTodo =(index)=>{
+
+    // console.log(todos[index])
+    // console.log("edit done")
+
+    input.value = todos[index]
+    editIndex = index
+    addBtn.innerText = "UPDATE"
 }

@@ -31,6 +31,7 @@
     border-radius: 20px;
     box-shadow: 3px 4px 6px rgba(0,0,0,0.7);
     overflow: auto;
+    position: relative;
 }
 
 ::-webkit-scrollbar{
@@ -40,6 +41,7 @@
 .inner > section{
     display: flex;
     gap:7px;
+   
 }
 
 section > input{
